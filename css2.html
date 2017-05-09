@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>css01</title>
+    <style>
+    .css1 {
+        width: 300px;
+        height: 50px;
+        background: #27acff;
+        box-shadow: -3px 0px 0 0 #ff0000;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+    
+    .css2 {
+        width: 300px;
+        height: 50px;
+        background: #27acff;
+        box-shadow: inset 3px 0px 0 0 #FF0000;
+    }
+    
+    .css3 {
+        width: 300px;
+        height: 50px;
+        margin-top: 50px;
+        background: #27acff;
+        background-image: linear-gradient(90deg, #ff0000 0px, #ff0000 5px, transparent 5px);
+    }
+    
+    .css4 {
+        width: 300px;
+        height: 50px;
+        margin-top: 50px;
+        background: #27acff;
+        filter: drop-shadow(-5px 0 0 #ff0000);
+    }
+    
+    .css5 {
+        width: 300px;
+        height: 50px;
+        margin-top: 50px;
+        position: relative;
+        background: #27acff;
+    }
+    
+    .css5::after {
+        content: "";
+        width: 3px;
+        height: 50px;
+        position: absolute;  
+        top: 0;
+        left: 0;
+        background: #FF0000;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="css1">加了内容</div>
+    <div class="css2"></div>
+    <div class="css3"></div>
+    <div class="css4"></div>
+    <div class="css5"></div>
+</body>
+
+</html>

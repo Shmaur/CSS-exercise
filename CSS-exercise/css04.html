@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css04</title>
+    <style>
+    .div1 {
+        position: relative;
+        width: 190px;
+        height: 190px;
+        background: #27acff;
+        border: 15px dashed #999;
+    }
+    
+    .div1::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+    }
+    
+    .div2 {
+        position: relative;
+        width: 190px;
+        height: 190px;
+        background: #FFF;
+        background-clip: padding-box;
+        margin-top: 20px;
+        border: 15px dashed #ccc;
+    }
+    
+    .div2::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+        background: #27acff;
+        z-index: -1;
+    }
+    
+    .div3 {
+        position: relative;
+        width: 190px;
+        height: 190px;
+        background: #27acff;
+        margin-top: 20px;
+        border: 15px dashed #ccc;
+        box-shadow: inset 190px 0px 0 0 #fff;
+    }
+    
+    .div4 {
+        position: relative;
+        width: 190px;
+        height: 190px;
+        background: #fff;
+        margin-top: 20px;
+        background-clip: padding-box;
+        border: 15px dashed #ccc;
+    }
+    
+    .div4::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+        background-image: linear-gradient(90deg, #27acff 0px, #27acff 260px);
+        z-index: -1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+
+</html>
